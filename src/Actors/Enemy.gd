@@ -13,7 +13,8 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	_velocity.x *= -1 if is_on_wall() else 1
-	_velocity.y= move_and_slide(_velocity, FLOOR_NORMAL).y#khi ma con quai cham vao tuong thi reset gia tri cua truc x ve 0
+	_velocity.y= move_and_slide(_velocity, FLOOR_NORMAL).y#khi ma con quai cham vao tuong thi quay dau
+	
 
 
 func _on_StompArea2D_area_entered(area: Area2D) -> void:

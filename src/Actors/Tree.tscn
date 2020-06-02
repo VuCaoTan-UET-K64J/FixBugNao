@@ -4,7 +4,7 @@
 [ext_resource path="res://Bramble_Bloom.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 40, 34 )
+extents = Vector2( 56.9586, 134.622 )
 
 [node name="Enemy" type="KinematicBody2D"]
 collision_layer = 2
@@ -17,11 +17,12 @@ scale = Vector2( 0.909163, 0.624732 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, -34 )
+position = Vector2( -0.440125, -28.2784 )
 shape = SubResource( 1 )
 
 [node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
-position = Vector2( 0, -33 )
+position = Vector2( -0.660197, -64.689 )
+scale = Vector2( 1.07482, 2.94722 )
 rect = Rect2( -50, -33, 100, 66 )
 process_parent = true
 physics_process_parent = true

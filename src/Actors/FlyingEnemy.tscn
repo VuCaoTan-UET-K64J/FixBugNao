@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/Actors/FlyingEnemy.gd" type="Script" id=1]
-[ext_resource path="res://assets/asset-godot/Player2.0.png" type="Texture" id=2]
+[ext_resource path="res://enemy-735330.png" type="Texture" id=2]
 
 [sub_resource type="OccluderPolygon2D" id=1]
-polygon = PoolVector2Array( -47.5109, -0.500443, -47.5109, 32.7162, -45.1858, 35.0414, -44.1893, 37.3666, -44.1893, 39.6917, -39.2068, 40.3561, -38.5424, 42.0169, -32.5634, 43.0134, -32.2313, 46.0029, 46.1601, 44.3421, 46.1601, 42.3491, 48.1531, 41.3526, 48.4853, 34.7092, 41.8419, 28.3981, 39.5168, 28.0659, 35.5308, 24.7442, 34.8664, 18.7652, 31.8769, 17.7687, 32.2091, 10.1289, 30.5483, 8.46806, 30.2161, 4.81424, 28.5553, 3.81773, 26.8944, -4.15427, 24.2371, -6.47944, 14.2721, -15.4479, 12.6113, -21.4269, 8.29309, -22.4234, 0.321091, -29.0668, -19.2767, -29.3989, -21.9341, -26.4094, -24.9236, -25.0808, -31.2348, -23.4199, -32.8956, -20.4304, -35.8851, -17.4409, -38.5424, -15.4479, -38.8746, -13.1228, -41.5319, -12.4584, -41.5319, -7.47594, -44.8536, -7.80811, -44.8536, -2.16127 )
+polygon = PoolVector2Array( -92.2055, 50.2369, -84.9325, 64.306, -81.7, 82.2831, -55.8405, 108.076, -46.1431, 111.985, -18.6673, 116.674, 16.0815, 116.674, 39.5168, 109.64, 55.679, 96.3522, 75.0738, 69.7773, 75.8819, 66.6508, 75.0738, 58.053, 78.3062, 39.2943, 78.3062, 29.9149, 79.9224, 21.3171, 95.2766, -12.2924, 91.4571, -34.3033, 81.0833, -51.7136, 65.3764, -22.4534, 51.6385, -31.0512, 34.6682, -38.0857, 19.314, -44.3386, 10.4448, -46.47, -21.298, -46.1159, -47.6264, -40.0846, -60.7907, -32.7131, -67.0264, -24.6715, -85.7335, -66.22, -94.7406, -50.1367, -101.669, -30.7027, -95.4335, -9.25831, -77.6354, 7.04616, -94.0478, 18.2173, -93.3549, 36.9812 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 40.3727, 30.9478 )
@@ -18,11 +18,13 @@ collision_mask = 4
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 0, -44.9277 )
+position = Vector2( 2.31279, -33.0855 )
+scale = Vector2( 0.32829, 0.312973 )
 texture = ExtResource( 2 )
 flip_h = true
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="Sprite"]
+position = Vector2( 6.44096, -28.2673 )
 occluder = SubResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -38,7 +40,8 @@ position = Vector2( 0, -5.75232 )
 shape = SubResource( 3 )
 
 [node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
-position = Vector2( 2.44687, -33.8156 )
+position = Vector2( 9.29832e-06, -34 )
+scale = Vector2( 0.788853, 0.88648 )
 rect = Rect2( -50, -33, 100, 66 )
 process_parent = true
 physics_process_parent = true
