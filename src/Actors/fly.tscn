@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://src/Actors/fly.gd" type="Script" id=1]
+[ext_resource path="res://assets/bumper.png" type="Texture" id=2]
+
+[sub_resource type="OccluderPolygon2D" id=1]
+polygon = PoolVector2Array( -35.7175, 21.7354, -46.4976, 17.1154, -51.631, 10.442, -55.2244, 3.25522, -55.7377, -4.44487, -53.6844, -12.6583, -48.551, -19.8451, -39.8242, -27.0318, -31.6108, -32.6785, -18.2639, -37.8119, -4.40377, -39.8653, 7.91637, -39.352, 22.2899, -36.7853, 33.07, -32.6785, 42.8235, -26.5185, 46.9302, -20.3584, 50.5236, -15.7383, 53.0903, -10.0916, 54.6303, -1.87817, 53.6036, 3.25522, 51.0369, 9.92864, 45.3902, 16.0887, 40.2568, 18.6554, 34.0967, 20.1954, 34.0967, 25.8422, 34.0967, 31.4889, 30.5033, 36.109, 25.3699, 38.1623, -25.964, 38.1623, -33.6641, 35.5956, -35.2042, 28.9222 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 33.5833, 24.0993 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 50.4622, 17.4959 )
+
+[node name="fly" type="KinematicBody2D"]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -2.05335, -39.281 )
+texture = ExtResource( 2 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Sprite"]
+occluder = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -2.05336, -24.7599 )
+scale = Vector2( 1, 0.964217 )
+shape = SubResource( 2 )
+
+[node name="StompArea2D" type="Area2D" parent="."]
+position = Vector2( -5.64674, -53.6214 )
+scale = Vector2( 0.903856, 0.97467 )
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StompArea2D"]
+position = Vector2( 0.451866, -11.0369 )
+shape = SubResource( 3 )
+
+[node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
+position = Vector2( -2.0097, -40.4207 )
+scale = Vector2( 1.08821, 1.15593 )
+rect = Rect2( -50, -33, 100, 66 )
+process_parent = true
+physics_process_parent = true
+[connection signal="area_entered" from="StompArea2D" to="." method="_on_StompArea2D_area_entered"]

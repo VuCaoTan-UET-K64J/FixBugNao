@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/AonLQLC.png" type="Texture" id=1]
+[ext_resource path="res://assets/font_title.tres" type="DynamicFont" id=2]
+[ext_resource path="res://src/Screens/MainScreen.gd" type="Script" id=3]
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2( 1.13846, 1.3828 )
+script = ExtResource( 3 )
+
+[node name="AonLQLC" type="Sprite" parent="."]
+position = Vector2( 845.456, 397.008 )
+scale = Vector2( 0.871715, 0.740598 )
+texture = ExtResource( 1 )
+
+[node name="newgame" type="Button" parent="."]
+margin_left = 545.732
+margin_top = 184.355
+margin_right = 557.732
+margin_bottom = 247.355
+rect_scale = Vector2( 50.7974, 1.62993 )
+custom_fonts/font = ExtResource( 2 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="levels" type="Button" parent="."]
+margin_left = 545.732
+margin_top = 336.392
+margin_right = 557.732
+margin_bottom = 399.392
+rect_scale = Vector2( 50.7974, 1.62993 )
+custom_fonts/font = ExtResource( 2 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quit" type="Button" parent="."]
+margin_left = 545.732
+margin_top = 494.511
+margin_right = 557.732
+margin_bottom = 557.51
+rect_scale = Vector2( 50.7974, 1.62993 )
+custom_fonts/font = ExtResource( 2 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="newgame" to="." method="_on_newgame_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]

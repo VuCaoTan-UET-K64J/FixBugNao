@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/AnyConv.com__Machinimasound - Battle Of Kings (Free Epic Music).wav-376638a126d271271d847e03c2042431.sample"
+
+[deps]
+
+source_file="res://assets/AnyConv.com__Machinimasound - Battle Of Kings (Free Epic Music).wav"
+dest_files=[ "res://.import/AnyConv.com__Machinimasound - Battle Of Kings (Free Epic Music).wav-376638a126d271271d847e03c2042431.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
