@@ -39,7 +39,7 @@ position = Vector2( 0.451866, -11.0369 )
 shape = SubResource( 3 )
 
 [node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
-position = Vector2( -2.0097, -40.4207 )
+position = Vector2( -5.1676, -41.4733 )
 scale = Vector2( 1.08821, 1.15593 )
 rect = Rect2( -50, -33, 100, 66 )
 process_parent = true

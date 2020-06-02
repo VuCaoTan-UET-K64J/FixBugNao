@@ -3,10 +3,10 @@
 [ext_resource path="res://src/UserInterface/SceneChangeButton.gd" type="Script" id=1]
 
 [node name="SceneChangeButton" type="Button"]
-margin_left = 3.22636
-margin_top = 1.43394
-margin_right = 253.226
-margin_bottom = 38.4339
+margin_left = 0.716961
+margin_top = 0.358482
+margin_right = 250.717
+margin_bottom = 37.3584
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource( 1 )
