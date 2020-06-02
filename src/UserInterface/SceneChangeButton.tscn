@@ -2,12 +2,15 @@
 
 [ext_resource path="res://src/UserInterface/SceneChangeButton.gd" type="Script" id=1]
 
-
-
 [node name="SceneChangeButton" type="Button"]
-margin_right = 250.0
-margin_bottom = 37.0
+margin_left = 3.22636
+margin_top = 1.43394
+margin_right = 253.226
+margin_bottom = 38.4339
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="button_up" from="." to="." method="_on_button_up"]
