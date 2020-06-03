@@ -20,7 +20,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Your First Game: 2d Platformer"
+config/name="SlimeNoSekai-LapTrinhNangCao"
 run/main_scene="res://src/Screens/Home.tscn"
 config/icon="res://icon.png"
 

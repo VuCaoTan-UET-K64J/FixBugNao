@@ -79,7 +79,7 @@ position = Vector2( 164.042, 942.902 )
 scale = Vector2( 1.89375, 1.62563 )
 texture = ExtResource( 2 )
 
-[node name="namegame" type="Sprite" parent="."]
+[node name="GameName" type="Sprite" parent="."]
 position = Vector2( 1003.74, 459.561 )
 scale = Vector2( 1.18537, 1.52 )
 texture = ExtResource( 7 )

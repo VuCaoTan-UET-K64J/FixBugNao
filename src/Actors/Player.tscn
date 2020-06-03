@@ -3,7 +3,7 @@
 [ext_resource path="res://src/Actors/Player.gd" type="Script" id=1]
 [ext_resource path="res://assets/asset-godot/Player1.0.png" type="Texture" id=2]
 
-[sub_resource type="OccluderPolygon2D" id=5]
+[sub_resource type="OccluderPolygon2D" id=1]
 polygon = PoolVector2Array( -49.0492, 46.839, -46.9028, 38.2535, -42.61, 35.2486, -38.3173, 24.9459, -35.3123, 14.214, -32.3074, 7.34555, -26.7268, 0.0478516, -18.5705, -5.96202, -14.707, -9.39624, -12.1314, -33.0065, -0.540924, -34.2943, 0.317657, -14.5476, 17.4887, -14.5476, 17.918, -33.0065, 30.7963, -32.5772, 30.367, -13.2597, 39.8111, -4.67419, 44.1039, 2.62352, 47.5381, 12.0676, 49.2552, 31.8143, 41.5282, 40.8291, 35.0891, 46.839 )
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -38,7 +38,7 @@ position = Vector2( 0.429291, -48.5083 )
 texture = ExtResource( 2 )
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="Sprite"]
-occluder = SubResource( 5 )
+occluder = SubResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0.429245, -34.1316 )

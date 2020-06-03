@@ -7,7 +7,7 @@
 extents = Vector2( 112.785, 25.6282 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 78.8868, 20.8892 )
+extents = Vector2( 78.8868, 1.05894 )
 
 [sub_resource type="OccluderPolygon2D" id=3]
 polygon = PoolVector2Array( 128.411, 68.8182, 441.344, 69.2325, 462.094, -25.6768, 150.126, -82.8868, -81.6893, -67.6749, -171.518, -76.802, -443.901, -62.6042, -446.711, 5.76851, -439.555, 73.289 )
@@ -40,8 +40,8 @@ scale = Vector2( 0.25408, 0.621469 )
 occluder = SubResource( 3 )
 
 [node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
-position = Vector2( 1.07897, -29.4253 )
-scale = Vector2( 2.24605, 0.873449 )
+position = Vector2( -4.6568, -35.878 )
+scale = Vector2( 2.33209, 1.06899 )
 rect = Rect2( -50, -33, 100, 66 )
 process_parent = true
 physics_process_parent = true
