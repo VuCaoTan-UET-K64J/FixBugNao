@@ -67,7 +67,7 @@ position = Vector2( 200, 760 )
 limit_right = 7760
 
 [node name="Portal2D" parent="." instance=ExtResource( 5 )]
-position = Vector2( 3722.26, -701.843 )
+position = Vector2( 3786.34, -708.33 )
 scale = Vector2( 0.999566, 1.01379 )
 next_scene = ExtResource( 15 )
 
