@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://src/Actors/FlyingEnemy01.gd" type="Script" id=1]
+[ext_resource path="res://Layer 17-enemy.png" type="Texture" id=2]
+
+[sub_resource type="OccluderPolygon2D" id=1]
+polygon = PoolVector2Array( -55.5792, 23.6545, -16.5199, 76.9666, 1.55231, 104.668, 4.46716, 75.3986, 14.9607, 65.9906, 13.2118, 52.4012, 24.8713, 38.2892, 28.3691, 29.4038, 40.0286, 19.9958, 40.6116, 15.8145, 30.118, 0.134422, 30.118, -8.22826, 35.9478, -12.9323, 34.7818, -23.3856, 26.0372, -23.3856, 19.6245, 5.88378, 10.2969, -15.0229, 13.2118, -38.543, 10.4448, -46.47, -25.8475, -48.9964, -42.1708, -19.2043, -48.5835, -24.431, -51.4984, -0.910904 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 31.6374, 54.1133 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 3.33585, 1.56661 )
+
+[node name="FlyingEnemy" type="KinematicBody2D"]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -1.46074, -28.5573 )
+scale = Vector2( 0.64729, 0.721975 )
+texture = ExtResource( 2 )
+flip_h = true
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Sprite"]
+position = Vector2( 6.44096, -27.7446 )
+occluder = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.7547, -33.2453 )
+shape = SubResource( 2 )
+
+[node name="StompArea2D" type="Area2D" parent="."]
+position = Vector2( 0, -66.4549 )
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StompArea2D"]
+position = Vector2( 0.75473, -5.75232 )
+shape = SubResource( 3 )
+
+[node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
+position = Vector2( -0.7547, -44.7546 )
+scale = Vector2( 0.5398, 1.21238 )
+rect = Rect2( -50, -33, 100, 66 )
+process_parent = true
+physics_process_parent = true
+[connection signal="area_entered" from="StompArea2D" to="." method="_on_StompArea2D_area_entered"]
