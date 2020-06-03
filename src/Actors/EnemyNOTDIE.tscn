@@ -4,13 +4,13 @@
 [ext_resource path="res://BígBoss.png" type="Texture" id=2]
 
 [sub_resource type="OccluderPolygon2D" id=1]
-polygon = PoolVector2Array( 70.8011, 99.0607, 12.5512, 171.296, -39.0417, 126.725, -83.9774, 131.336, -49.0274, 240.457, -62.3417, 257.363, -210.463, 89.8392, -282.027, -59.2416, -275.37, -125.329, -180.506, -151.457, -185.499, -231.376, 2.56543, -248.282, 65.8082, -245.208, 64.3303, -211.327, 40.844, -194.49, 170.658, -229.839, 152.351, -131.477, 164.001, -88.443, 282.165, -111.497, 85.7797, 261.974, 69.1368, 241.994, 135.708, 39.121 )
+polygon = PoolVector2Array( 70.8011, 99.0607, 12.5512, 171.296, -39.0417, 126.725, -83.9774, 131.336, -49.0274, 240.457, -62.3417, 257.363, -210.463, 89.8392, -282.027, -59.2416, -275.37, -125.329, -180.506, -151.457, -185.499, -231.376, 2.56543, -248.282, 65.8082, -245.208, 64.3303, -211.327, 40.844, -194.49, 170.658, -229.839, 168.349, -190.822, 152.351, -131.477, 164.001, -88.443, 282.165, -111.497, 85.7797, 261.974, 69.1368, 241.994, 135.708, 39.121 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 40, 34 )
+extents = Vector2( 76.2425, 82.4706 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 48.0747, 13.2688 )
+extents = Vector2( 3.20905, 2.95205 )
 
 [node name="Enemy" type="KinematicBody2D"]
 collision_layer = 2
@@ -18,8 +18,8 @@ collision_mask = 4
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( -2.11451, -62.0952 )
-scale = Vector2( 0.292895, 0.32085 )
+position = Vector2( -0.922863, -62.0952 )
+scale = Vector2( 0.289471, 0.32085 )
 texture = ExtResource( 2 )
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="Sprite"]
@@ -27,19 +27,19 @@ position = Vector2( 3.32856, 0 )
 occluder = SubResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, -34 )
+position = Vector2( -1.45995, -63.4909 )
 shape = SubResource( 2 )
 
 [node name="StompArea2D" type="Area2D" parent="."]
-position = Vector2( -1.10956, -65.3453 )
+position = Vector2( 3.25979, -57.0038 )
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StompArea2D"]
-position = Vector2( 1.58154, 52.2251 )
+position = Vector2( -4.37665, -4.57664 )
 shape = SubResource( 3 )
 
 [node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
-position = Vector2( 1.54347, -66.0952 )
+position = Vector2( 2.41945, -65.2192 )
 scale = Vector2( 1.51705, 2.39654 )
 rect = Rect2( -50, -33, 100, 66 )
 process_parent = true

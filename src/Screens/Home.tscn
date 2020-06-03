@@ -8,16 +8,16 @@
 [ext_resource path="res://assets/montserrat_extrabold.otf" type="DynamicFontData" id=6]
 [ext_resource path="res://assets/namegame.png" type="Texture" id=7]
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=1]
 size = 80
 font_data = ExtResource( 6 )
 
-[sub_resource type="DynamicFontData" id=1]
+[sub_resource type="DynamicFontData" id=2]
 font_path = "res://assets/DMMono-Italic.ttf"
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=3]
 size = 30
-font_data = SubResource( 1 )
+font_data = SubResource( 2 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 3 )
@@ -45,17 +45,20 @@ __meta__ = {
 [node name="Label" type="Label" parent="playnow"]
 margin_right = 509.0
 margin_bottom = 123.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 1 )
 text = "PLAY"
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="intro" type="RichTextLabel" parent="."]
 margin_left = 425.0
 margin_top = 887.0
 margin_right = 1849.0
 margin_bottom = 1059.0
-custom_fonts/normal_font = SubResource( 2 )
+custom_fonts/normal_font = SubResource( 3 )
 bbcode_enabled = true
 script = ExtResource( 4 )
 __meta__ = {
