@@ -67,9 +67,12 @@ position = Vector2( 200, 760 )
 limit_right = 7760
 
 [node name="Portal2D" parent="." instance=ExtResource( 5 )]
-position = Vector2( 3786.34, -708.33 )
+position = Vector2( 567.154, 911.231 )
 scale = Vector2( 0.999566, 1.01379 )
 next_scene = ExtResource( 15 )
+
+[node name="Enemy" parent="Portal2D" instance=ExtResource( 10 )]
+position = Vector2( 2862, 1277.64 )
 
 [node name="Coins" type="Node2D" parent="."]
 
