@@ -19,7 +19,9 @@ margin_top = 184.355
 margin_right = 557.732
 margin_bottom = 247.355
 rect_scale = Vector2( 50.7974, 1.62993 )
+focus_mode = 1
 custom_fonts/font = ExtResource( 2 )
+enabled_focus_mode = 1
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -31,7 +33,9 @@ margin_top = 336.392
 margin_right = 557.732
 margin_bottom = 399.392
 rect_scale = Vector2( 50.7974, 1.62993 )
+focus_mode = 1
 custom_fonts/font = ExtResource( 2 )
+enabled_focus_mode = 1
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -43,10 +47,13 @@ margin_top = 494.511
 margin_right = 557.732
 margin_bottom = 557.51
 rect_scale = Vector2( 50.7974, 1.62993 )
+focus_mode = 1
 custom_fonts/font = ExtResource( 2 )
+enabled_focus_mode = 1
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 [connection signal="pressed" from="newgame" to="." method="_on_newgame_pressed"]
+[connection signal="pressed" from="levels" to="." method="_on_levels_pressed"]
 [connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]

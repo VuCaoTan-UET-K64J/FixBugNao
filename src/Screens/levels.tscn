@@ -1,0 +1,153 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/montserrat_extrabold.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://src/Screens/levels.gd" type="Script" id=2]
+[ext_resource path="res://assets/level.png" type="Texture" id=3]
+[ext_resource path="res://assets/DMMono-Italic.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/icons8-folder-480.png" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 4 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="1572370269_mo-astray" type="Sprite" parent="."]
+position = Vector2( 956.531, 547.542 )
+scale = Vector2( 0.991331, 0.997438 )
+texture = ExtResource( 3 )
+
+[node name="Level01" type="Button" parent="." groups=[
+"level",
+]]
+margin_left = 214.797
+margin_top = 446.361
+margin_right = 706.797
+margin_bottom = 932.361
+rect_scale = Vector2( 0.422431, 0.313184 )
+icon = ExtResource( 5 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Level01"]
+margin_top = 140.0
+margin_right = 260.0
+margin_bottom = 190.0
+rect_scale = Vector2( 1.99974, 4.27856 )
+custom_fonts/font = SubResource( 1 )
+text = "Level 1"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level02" type="Button" parent="." groups=[
+"level",
+]]
+margin_left = 540.554
+margin_top = 458.025
+margin_right = 1032.55
+margin_bottom = 944.025
+rect_scale = Vector2( 0.422431, 0.313184 )
+icon = ExtResource( 5 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Level02"]
+margin_top = 140.0
+margin_right = 260.0
+margin_bottom = 190.0
+rect_scale = Vector2( 1.99974, 4.27856 )
+custom_fonts/font = SubResource( 1 )
+text = "Level 2"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level03" type="Button" parent="." groups=[
+"level",
+]]
+margin_left = 1084.49
+margin_top = 453.471
+margin_right = 1576.49
+margin_bottom = 939.471
+rect_scale = Vector2( 0.422431, 0.313184 )
+icon = ExtResource( 5 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Level03"]
+margin_top = 140.0
+margin_right = 260.0
+margin_bottom = 190.0
+rect_scale = Vector2( 1.99974, 4.27856 )
+custom_fonts/font = SubResource( 1 )
+text = "Level 3"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level04" type="Button" parent="." groups=[
+"level",
+]]
+margin_left = 1489.83
+margin_top = 448.812
+margin_right = 1981.83
+margin_bottom = 934.812
+rect_scale = Vector2( 0.422431, 0.313184 )
+icon = ExtResource( 5 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Level04"]
+margin_top = 140.0
+margin_right = 260.0
+margin_bottom = 190.0
+rect_scale = Vector2( 1.99974, 4.27856 )
+custom_fonts/font = SubResource( 1 )
+text = "Level 4"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 1587.83
+margin_top = 900.893
+margin_right = 1864.83
+margin_bottom = 1010.89
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Button"]
+margin_right = 280.0
+margin_bottom = 114.0
+custom_fonts/font = SubResource( 2 )
+text = "QUIT"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

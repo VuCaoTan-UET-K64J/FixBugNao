@@ -36,3 +36,7 @@ func set_paused(value: bool) -> void:
 	paused = value
 	scene_tree.paused = value
 	pause_overlay.visible = value
+
+
+func _on_MainScreenButton_button_up():
+	pass # Replace with function body.
