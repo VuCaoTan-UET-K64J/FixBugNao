@@ -122,7 +122,7 @@ position = Vector2( 180, 480 )
 limit_right = 6080
 
 [node name="Portal2D" parent="." instance=ExtResource( 6 )]
-position = Vector2( 3462.88, -306.227 )
+position = Vector2( 3468.31, -349.699 )
 next_scene = ExtResource( 5 )
 
 [node name="Coins" type="Node2D" parent="."]
@@ -186,12 +186,6 @@ position = Vector2( 5350, 630 )
 
 [node name="Coin15" parent="Coins" instance=ExtResource( 2 )]
 position = Vector2( 5150, 357.342 )
-
-[node name="Bumper" parent="Coins/Coin15" instance=ExtResource( 9 )]
-position = Vector2( 569.425, 334.819 )
-
-[node name="Bumper2" parent="Coins/Coin15" instance=ExtResource( 9 )]
-position = Vector2( 345.364, 206.425 )
 
 [node name="Coin16" parent="Coins" instance=ExtResource( 2 )]
 position = Vector2( 4864.99, 336.95 )
@@ -269,5 +263,11 @@ position = Vector2( 300, 898 )
 
 [node name="Coin3" parent="." instance=ExtResource( 15 )]
 position = Vector2( 251, 897 )
+
+[node name="Bumper3" parent="." instance=ExtResource( 9 )]
+position = Vector2( 5495.36, 563.767 )
+
+[node name="Bumper4" parent="." instance=ExtResource( 9 )]
+position = Vector2( 5719.42, 692.161 )
 
 [editable path="Player"]
