@@ -10,7 +10,6 @@ func _on_StompDetector_area_entered(area: Area2D) -> void:
 
 
 func _on_EnemyDetector_body_entered(body: PhysicsBody2D) -> void:#va cham voi quai la chet
-
 	die()
 
 
